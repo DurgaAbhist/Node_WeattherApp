@@ -3,6 +3,7 @@ const searchElement = document.querySelector('input');
 const messageOne = document.querySelector('#message-1');
 const messageTwo = document.querySelector('#message-2');
 
+// Render the Weather status on user-preferred location.
 formElement.addEventListener('submit', (event) => {
     event.preventDefault();
 
