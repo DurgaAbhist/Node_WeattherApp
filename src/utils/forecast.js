@@ -10,7 +10,7 @@ const forecast = (latitude, longitude, callback) => {
             callback(response.body.error.info, undefined);
         } else {
             console.log(response.body.current);
-            callback(undefined, 'The current temperature is '+response.body.current.temperature+' but feels like '+response.body.current.feelslike);
+            callback(undefined, 'The current temperature is '+response.body.current.temperature+' but feels like '+response.body.current.feelslike+'. The humidity is ' + response.body.current.humidity );
         }
     });
 };
